@@ -1,0 +1,10 @@
+
+# create security group for the ecs cluster
+aws ec2 create-security-group --group-name my-ecs-sg --description my-ecs-sg
+
+# list created security group
+aws ec2 describe-security-groups --group-names my-ecs-sg
+
+
+# list clusters
+aws ecs list-clusters
